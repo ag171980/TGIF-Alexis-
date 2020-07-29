@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+.position{
+    display: flex;
+    flex-direction: row;
+
+}
+.img{
+    margin-top: 12vh;
+}
+.headers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.correo{
+    font-size: 25px;
+}
+/*Senator page*/
+
+.text-senator{
+    width: 60%;
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-one{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+}
+label{
+    padding: 0px 15px;
+}
+.text-accordeon{
+    width: 70%;
+    margin-left: 6vw;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+ justify-content: space-around;
+}
+
+
+
+.flex-content:nth-child(1){
+    width: 50%;
+}

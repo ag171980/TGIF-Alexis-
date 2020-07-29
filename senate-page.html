@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5b23b3e9e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="headers">
+        <div class="logo">
+            <i class="fas fa-search"></i>
+            <p class="titulo">TGIF Logo</p>
+        </div>
+        <div class="correo">
+            <address>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:info@tgif.net">info@tgif.net</a>
+            </address>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Congress 113
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="senate-page.html">Senate</a>
+                <a class="dropdown-item" href="house-page.html">House</a>
+    
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Attendance
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="senate-attendance.html">Senate</a>
+                <a class="dropdown-item" href="house-attendance.html">House</a>
+    
+              </div>
+              
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Party Loyalty
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="senate-party-loyalty.html">Senate</a>
+                <a class="dropdown-item" href="house-party-loyalty.html">House</a>
+    
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+    
+    <div class="container">
+        <div class="text-senator">
+            <h2>Senators</h2>
+            <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the
+                U.S.
+                Constitution. Each state is represented by two senators, regardless of population, who serve staggered
+                six-year terms. The Senate has several exclusive powers not granted to the House, including consenting
+                to
+                treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet
+                secretaries, federal judges, other federal executive officials, military officers, regulatory officials,
+                ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by
+                the
+                House.</p>
+        </div>
+        <div class="input">
+            <div class="input-one">
+                <p>Filter By Party:</p>
+                <label for="republican">
+                    <input type="checkbox" name="republican" checked value="R" id="republican" onclick= check() class="congress" >
+                    Republican
+                </label>
+                <label for="democrat">
+                    <input type="checkbox" name="democrat" checked value="D" onclick= check()  id="democrat" class="congress" >
+                    Democrat
+                </label>
+                <label for="independent">
+                    <input type="checkbox" name="independent" checked value="I" onclick= check() id="independent" class="congress" >
+                    Independent
+                </label>
+            </div>
+            <div class="input-one">
+                <p>Filter By State:</p>
+                <select name="party" id="party" onclick="check()">                  </select>        
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Abbreviations
+                </button>  
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Abbreviations</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table>
+                                    <tbody>
+                                    <tr><td class="states-abb">NC</td><td class="states">North Carolina</td></tr>
+                                    <tr><td class="states-abb">AK</td><td class="states">Alaska</td></tr>   
+                                    <tr><td class="states-abb">AL</td><td class="states">Alabama</td></tr>
+                                    <tr><td class="states-abb">LA</td><td class="states">Louisiana</td></tr>
+                                    <tr><td class="states-abb">MI</td><td class="states">Michigan</td></tr>
+                                    <tr><td class="states-abb">NV</td><td class="states">Nevada</td></tr>
+                                    <tr><td class="states-abb">NJ</td><td class="states">New Jersey</td></tr>
+                                    <tr><td class="states-abb">MN</td><td class="states">Minnesota</td></tr>
+                                    <tr><td class="states-abb">AZ</td><td class="states">Arizona</td></tr>
+                                    <tr><td class="states-abb">PA</td><td class="states">Pennsylvania</td></tr>
+                                    <tr><td class="states-abb">KY</td><td class="states">Kentucky</td></tr>
+                                    <tr><td class="states-abb">GA</td><td class="states">Georgia</td></tr>
+                                    <tr><td class="states-abb">TX</td><td class="states">Texas</td></tr>
+                                    <tr><td class="states-abb">CA</td><td class="states">California</td></tr>
+                                    <tr><td class="states-abb">OH</td><td class="states">Ohio</td></tr>
+                                    <tr><td class="states-abb">FL</td><td class="states">Florida</td></tr>
+                                    <tr><td class="states-abb">NY</td><td class="states">New York</td></tr>
+                                    <tr><td class="states-abb">UT</td><td class="states">Utah</td></tr>
+                                    <tr><td class="states-abb">TN</td><td class="states">Tennessee</td></tr>
+                                    <tr><td class="states-abb">OR</td><td class="states">Oregon</td></tr>
+                                    <tr><td class="states-abb">GU</td><td class="states">Guam</td></tr>
+                                    <tr><td class="states-abb">IA</td><td class="states">Iowa</td></tr>
+                                    <tr><td class="states-abb">VA</td><td class="states">Virginia</td></tr>
+                                    <tr><td class="states-abb">OK</td><td class="states">Oklahoma</td></tr>
+                                    <tr><td class="states-abb">IN</td><td class="states">Indiana</td></tr>
+                                    <tr><td class="states-abb">IL</td><td class="states">Illionis</td></tr>
+                                    <tr><td class="states-abb">WV</td><td class="states">West Virginia</td></tr>
+                                    <tr><td class="states-abb">MA</td><td class="states">Massachusetts</td></tr>
+                                    <tr><td class="states-abb">DE</td><td class="states">Delaware</td></tr>
+                                    <tr><td class="states-abb">VI</td><td class="states">U.S. Virgin Islands</td></tr>
+                                    <tr><td class="states-abb">RI</td><td class="states">Rhode Island</td></tr>
+                                    <tr><td class="states-abb">MO</td><td class="states">Missouri</td></tr>
+                                    <tr><td class="states-abb">SC</td><td class="states">South Carolina</td></tr>
+                                    <tr><td class="states-abb">CO</td><td class="states">Colorado</td></tr>
+                                    <tr><td class="states-abb">AR</td><td class="states">Arkansas</td></tr>
+                                    <tr><td class="states-abb">CT</td><td class="states">Connecticut</td></tr>
+                                    <tr><td class="states-abb">ND</td><td class="states">North Dakota</td></tr>
+                                    <tr><td class="states-abb">MD</td><td class="states">Maryland</td></tr>
+                                    <tr><td class="states-abb">MT</td><td class="states">Montana</td> </tr>
+                                    <tr><td class="states-abb">WA</td><td class="states">Washington</td></tr>
+                                    <tr><td class="states-abb">WI</td><td class="states">Wisconsin</td></tr>
+                                    <tr><td class="states-abb">AS</td><td class="states">American Samoa</td></tr>
+                                    <tr><td class="states-abb">NE</td><td class="states">Nebraska</td></tr>
+                                    <tr><td class="states-abb">HI</td><td class="states">Hawaii</td></tr>
+                                    <tr><td class="states-abb">MS</td><td class="states">Mississippi</td></tr>
+                                    <tr><td class="states-abb">KS</td><td class="states">Kansas</td></tr>
+                                    <tr><td class="states-abb">NH</td><td class="states">New Hampshire</td></tr>
+                                    <tr><td class="states-abb">ID</td><td class="states">Idaho</td></tr>
+                                    <tr><td class="states-abb">NM</td><td class="states">New Mexico</td></tr>
+                                    <tr><td class="states-abb">WY</td><td class="states">Wyoming</td></tr>
+                                    <tr><td class="states-abb">ME</td><td class="states">Maine</td></tr>
+                                    <tr><td class="states-abb">SD</td><td class="states">South Dakota</td></tr>
+                                    <tr><td class="states-abb">DC</td><td class="states">District of Columbia</td></tr>
+                                    <tr><td class="states-abb">PR</td><td class="states">Puerto Rico</td></tr>
+                                    <tr><td class="states-abb">MP</td><td class="states">Northern Mariana Islands</td></tr>
+                                    <tr><td class="states-abb">VT</td><td class="states">Vermont</td></tr>
+                                     
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Party</th>
+                    <th>State</th>
+                    <th>Seniority</th>
+                    <th>% votes with party</th>
+                    <th>Total votes</th>
+                </tr>
+            </thead>
+            <tbody id="table-data">
+            </tbody>
+        </table>
+        <footer>
+            <p>2016 TGIF | All Rights Reserved</p>
+        </footer>
+    </div>
+    <script src="js/pro-congress-113-senate.js"></script>
+    <script src="js/senate-data.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
